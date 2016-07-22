@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Blogger_Sans.otf">
+            <string>BloggerSans</string>
+            <string>BloggerSans</string>
+            <string>BloggerSans</string>
+            <string>BloggerSans</string>
+            <string>BloggerSans</string>
+            <string>BloggerSans</string>
+            <string>BloggerSans</string>
+            <string>BloggerSans</string>
+            <string>BloggerSans</string>
+            <string>BloggerSans</string>
+            <string>BloggerSans</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EZYGradientView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAn-Ln-fH6" customClass="EZYGradientView" customModule="EZYGradientView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Centre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoj-9U-hox">
+                                        <rect key="frame" x="280" y="157" width="41" height="16"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0º 360.0º" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuM-cD-XfO">
+                                        <rect key="frame" x="560" y="127" width="40" height="51"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90.0º" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7W-dn-1vD">
+                                        <rect key="frame" x="285" y="0.0" width="30" height="14"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45.0º" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7R-6R-6eW">
+                                        <rect key="frame" x="570" y="0.0" width="30" height="14"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="135.0º" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYk-DR-Y1q">
+                                        <rect key="frame" x="1" y="0.0" width="37" height="14"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="225.0º" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kip-b2-zA6">
+                                        <rect key="frame" x="1" y="286" width="37" height="14"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="270.0º" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mq-7T-aHh">
+                                        <rect key="frame" x="282" y="286" width="37" height="14"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="315.0º" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg6-Zm-67U">
+                                        <rect key="frame" x="562" y="286" width="37" height="14"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="180.0º 180.0º" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e15-HE-uMz">
+                                        <rect key="frame" x="0.0" y="127" width="40" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="e15-HE-uMz" secondAttribute="height" multiplier="40:51" id="oTq-EB-S5g"/>
+                                            <constraint firstAttribute="height" constant="51" id="vHW-Ke-Ifz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboard Gradient View " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-5g-rnQ">
+                                        <rect key="frame" x="212" y="259" width="177" height="17"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0Kj-ow-1S7"/>
+                                    <constraint firstItem="7mq-7T-aHh" firstAttribute="centerX" secondItem="zAn-Ln-fH6" secondAttribute="centerX" id="24I-pL-M3O"/>
+                                    <constraint firstItem="EuM-cD-XfO" firstAttribute="width" secondItem="e15-HE-uMz" secondAttribute="width" id="3Fd-yG-IUg"/>
+                                    <constraint firstItem="Kip-b2-zA6" firstAttribute="leading" secondItem="zAn-Ln-fH6" secondAttribute="leading" constant="1" id="4Wm-4F-uhI"/>
+                                    <constraint firstItem="e15-HE-uMz" firstAttribute="centerY" secondItem="zAn-Ln-fH6" secondAttribute="centerY" constant="2.5" id="53v-Xv-2L8"/>
+                                    <constraint firstItem="EuM-cD-XfO" firstAttribute="height" secondItem="e15-HE-uMz" secondAttribute="height" id="5fM-m9-Lfi"/>
+                                    <constraint firstAttribute="bottom" secondItem="cg6-Zm-67U" secondAttribute="bottom" id="7ZG-ad-aRJ"/>
+                                    <constraint firstItem="e15-HE-uMz" firstAttribute="leading" secondItem="zAn-Ln-fH6" secondAttribute="leading" id="9TN-TB-tjz"/>
+                                    <constraint firstItem="l7W-dn-1vD" firstAttribute="top" secondItem="zAn-Ln-fH6" secondAttribute="top" id="A1A-wP-5RO"/>
+                                    <constraint firstItem="EuM-cD-XfO" firstAttribute="centerY" secondItem="zAn-Ln-fH6" secondAttribute="centerY" constant="2.5" id="DUW-za-3LW"/>
+                                    <constraint firstItem="HYk-DR-Y1q" firstAttribute="leading" secondItem="zAn-Ln-fH6" secondAttribute="leading" constant="1" id="EzL-ca-3dI"/>
+                                    <constraint firstAttribute="width" secondItem="zAn-Ln-fH6" secondAttribute="height" multiplier="1:1" id="Fuj-Hl-eem"/>
+                                    <constraint firstItem="7mq-7T-aHh" firstAttribute="top" secondItem="hS8-5g-rnQ" secondAttribute="bottom" constant="10" id="GJj-ft-HX9"/>
+                                    <constraint firstItem="eoj-9U-hox" firstAttribute="centerY" secondItem="zAn-Ln-fH6" secondAttribute="centerY" multiplier="1.1" id="Jiw-d8-ldC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kip-b2-zA6" secondAttribute="bottom" id="L01-DQ-jYv"/>
+                                    <constraint firstAttribute="trailing" secondItem="E7R-6R-6eW" secondAttribute="trailing" id="NfS-BC-4uO"/>
+                                    <constraint firstAttribute="trailing" secondItem="EuM-cD-XfO" secondAttribute="trailing" id="SHe-hZ-1vz"/>
+                                    <constraint firstAttribute="trailing" secondItem="cg6-Zm-67U" secondAttribute="trailing" constant="1" id="WFp-Gb-oTK"/>
+                                    <constraint firstItem="hS8-5g-rnQ" firstAttribute="centerX" secondItem="zAn-Ln-fH6" secondAttribute="centerX" id="XMZ-lt-HcQ"/>
+                                    <constraint firstItem="l7W-dn-1vD" firstAttribute="centerX" secondItem="zAn-Ln-fH6" secondAttribute="centerX" id="YWI-tl-lJ2"/>
+                                    <constraint firstItem="eoj-9U-hox" firstAttribute="centerX" secondItem="zAn-Ln-fH6" secondAttribute="centerX" id="cOm-Wg-BIF"/>
+                                    <constraint firstItem="HYk-DR-Y1q" firstAttribute="top" secondItem="zAn-Ln-fH6" secondAttribute="top" id="giW-fn-n9l"/>
+                                    <constraint firstAttribute="bottom" secondItem="7mq-7T-aHh" secondAttribute="bottom" id="uKg-QB-vkd"/>
+                                    <constraint firstItem="E7R-6R-6eW" firstAttribute="top" secondItem="zAn-Ln-fH6" secondAttribute="top" id="ubn-3K-ehj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                        <color key="value" red="0.58451926099999996" green="0.80785915180000001" blue="0.0030676620990000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" red="1" green="0.92293074870000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="angleº">
+                                        <real key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="colorRatio">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fadeIntensity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Kj-ow-1S7"/>
+                                        <exclude reference="Fuj-Hl-eem"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rj3-67-jyH">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programmatic Gradient View " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46J-Fh-U5y">
+                                        <rect key="frame" x="201" y="256" width="199" height="17"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="46J-Fh-U5y" firstAttribute="centerX" secondItem="Rj3-67-jyH" secondAttribute="centerX" id="PL7-y7-O2o"/>
+                                    <constraint firstAttribute="bottom" secondItem="46J-Fh-U5y" secondAttribute="bottom" constant="27" id="UiT-B2-arw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zAn-Ln-fH6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1EV-Ff-dgn"/>
+                            <constraint firstItem="zAn-Ln-fH6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="GJn-Hj-K6d"/>
+                            <constraint firstAttribute="trailing" secondItem="zAn-Ln-fH6" secondAttribute="trailing" id="KQm-EQ-jIv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rj3-67-jyH" secondAttribute="bottom" id="MJI-kl-qlH"/>
+                            <constraint firstItem="zAn-Ln-fH6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R4B-jp-yoa"/>
+                            <constraint firstItem="zAn-Ln-fH6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="ROC-e7-bqZ"/>
+                            <constraint firstItem="zAn-Ln-fH6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="TXl-TI-DSC"/>
+                            <constraint firstItem="Rj3-67-jyH" firstAttribute="top" secondItem="zAn-Ln-fH6" secondAttribute="bottom" id="YaI-Gx-Q4R"/>
+                            <constraint firstItem="Rj3-67-jyH" firstAttribute="top" secondItem="zAn-Ln-fH6" secondAttribute="bottom" constant="5" id="Yax-38-Wed"/>
+                            <constraint firstItem="zAn-Ln-fH6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="djh-EP-sam"/>
+                            <constraint firstAttribute="trailing" secondItem="Rj3-67-jyH" secondAttribute="trailing" id="k9R-mA-N8n"/>
+                            <constraint firstItem="Rj3-67-jyH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mXu-NI-oxg"/>
+                            <constraint firstItem="zAn-Ln-fH6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oXx-2V-CVL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1EV-Ff-dgn"/>
+                                <exclude reference="R4B-jp-yoa"/>
+                                <exclude reference="ROC-e7-bqZ"/>
+                                <exclude reference="TXl-TI-DSC"/>
+                                <exclude reference="Yax-38-Wed"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="gradientView" destination="zAn-Ln-fH6" id="57j-T3-hS6"/>
+                        <outlet property="refView" destination="Rj3-67-jyH" id="avn-dE-Teq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404" y="280"/>
+        </scene>
+    </scenes>
+</document>
