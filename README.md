@@ -1,4 +1,6 @@
-![EZYGradientView](Assets/Banner.png)
+<p align="center" >
+  <img src="https://raw.githubusercontent.com/shashankpali/EZYGradientView/master/Assets/Banner.png" alt="EZYGradientView" title="EZYGradientView">
+</p>
 
 `EZYGradientView` is a different and unique take on creating gradients on the iOS platform. The default `CAGradientLayer` implementation works just fine, but is confusing and gives different results than expected. From the documentation:
 
