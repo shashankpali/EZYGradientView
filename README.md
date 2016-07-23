@@ -2,9 +2,7 @@
 
 `EZYGradientView` is a different and unique take on creating gradients on the iOS platform. The default `CAGradientLayer` implementation works just fine, but is confusing and gives different results than expected. From the documentation:
 
-```
-The start point corresponds to the first stop of the gradient. The point is defined in the unit coordinate space and is then mapped to the layer’s bounds rectangle when drawn. 
-```
+> The start point corresponds to the first stop of the gradient. The point is defined in the unit coordinate space and is then mapped to the layer’s bounds rectangle when drawn. 
 
 It's not really clear what the mapped values for the start and end points will be. If we set the start x coordinate 0.2, it does not resolve to 0.2 of the view's width on the X-axis.
 
