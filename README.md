@@ -22,6 +22,13 @@ CocoaPods is the preferred way to install this library. Add this command to your
 ```
 pod 'EZYGradientView'
 ```
+
+If you want the Objective C version, add:
+
+```
+pod 'EZYGradientView/ObjC'
+```
+
 # Direct Installation
 
 Download .zip file and extract it. There you will find the `EZYGradientView` folder, copy EZYGradientView.swift to your respective project.
