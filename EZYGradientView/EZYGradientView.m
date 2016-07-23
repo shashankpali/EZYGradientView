@@ -77,7 +77,7 @@ struct EZYLocations EZYLocationsMake(CGFloat firstColor, CGFloat secondColor)
 
 - (struct EZYPoints)startEndPoints
 {
-  CGFloat rotCalX, rotCalY;
+  CGFloat rotCalX = 0.0, rotCalY = 0.0;
   CGFloat rotate = _angleº / 90;
   
   if (rotate <= 1)
