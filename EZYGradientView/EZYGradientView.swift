@@ -26,10 +26,12 @@ import UIKit
 
 public class EZYGradientView: UIView
 {
+  /// Select color to create gradients
   @IBInspectable public var firstColor: UIColor = UIColor.whiteColor()
   @IBInspectable public var secondColor: UIColor = UIColor.whiteColor()
   
-  @IBInspectable public var angleº: Float = 45
+  /// Angle will decide tilt of gradient line
+  @IBInspectable public var angleº: Float = 45.0
     {
     didSet
     {
@@ -49,26 +51,45 @@ public class EZYGradientView: UIView
     }
   }
   
+  /// Color ratio will decide the proportion of colors
   @IBInspectable public var colorRatio: Float = 0.5
-  @IBInspectable public var fadeIntensity: Float = 0.0
+    {
+    didSet
+    {
+      assert(colorRatio >= 0 || colorRatio <= 1, "Color Ratio: Valid range is from 0.0 to 1.0")
+    }
+  }
   
-  private var gradientLayer = CAGradientLayer()
+  /// Fade intensity will allow colors to get dispersed
+  @IBInspectable public var fadeIntensity: Float = 0.0
+    {
+    didSet
+    {
+      assert(colorRatio >= 0 || colorRatio <= 1, "Fade Intensity: Valid range is from 0.0 to 1.0")
+    }
+  }
+  
+  private var gradientLayer: CAGradientLayer?
   
   override public func drawRect(rect: CGRect)
   {
-    gradientLayer.frame = self.bounds
-    gradientLayer.colors = [firstColor.CGColor, secondColor.CGColor]
+    if gradientLayer == nil
+    {
+      gradientLayer = CAGradientLayer()
+      gradientLayer!.frame = self.bounds
+      layer.insertSublayer(gradientLayer!, atIndex: 0)
+    }
+    gradientLayer!.colors = [firstColor.CGColor, secondColor.CGColor]
     
     let points = startEndPoints()
-    gradientLayer.startPoint = points.0
-    gradientLayer.endPoint = points.1
+    gradientLayer!.startPoint = points.0
+    gradientLayer!.endPoint = points.1
     
     let colorLoc = locations()
-    gradientLayer.locations = [colorLoc.0, colorLoc.1]
-    
-    layer.insertSublayer(gradientLayer, atIndex: 0)
+    gradientLayer!.locations = [colorLoc.0, colorLoc.1]
   }
   
+  //MARK: - Start and end point calculator
   private func startEndPoints() -> (CGPoint, CGPoint)
   {
     var rotCalX: Float = 0.0
@@ -103,6 +124,7 @@ public class EZYGradientView: UIView
     return (start, end)
   }
   
+  //MARK: - Calculate the colors' location
   private func locations() -> (Float, Float)
   {
     let divider = fadeIntensity / self.divider()

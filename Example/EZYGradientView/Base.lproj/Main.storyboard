@@ -163,7 +163,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="46J-Fh-U5y" firstAttribute="centerX" secondItem="Rj3-67-jyH" secondAttribute="centerX" id="PL7-y7-O2o"/>
                                     <constraint firstAttribute="bottom" secondItem="46J-Fh-U5y" secondAttribute="bottom" constant="27" id="UiT-B2-arw"/>

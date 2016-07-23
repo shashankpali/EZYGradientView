@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6BFF40641D42436E008EF94E /* Blogger_Sans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6BFF40631D42436E008EF94E /* Blogger_Sans.otf */; };
-		6CBE806D1D422EFA00519B0D /* EZYGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBE806C1D422EFA00519B0D /* EZYGradientView.swift */; };
+		6CA6630E1D439ACB00AE785E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA6630D1D439ACB00AE785E /* main.m */; };
+		6CA663111D439ACB00AE785E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA663101D439ACB00AE785E /* AppDelegate.m */; };
+		6CA663141D439ACB00AE785E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA663131D439ACB00AE785E /* ViewController.m */; };
+		6CA663171D439ACB00AE785E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA663151D439ACB00AE785E /* Main.storyboard */; };
+		6CA663191D439ACB00AE785E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA663181D439ACB00AE785E /* Assets.xcassets */; };
+		6CA6631C1D439ACB00AE785E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA6631A1D439ACB00AE785E /* LaunchScreen.storyboard */; };
+		6CA663231D439C8F00AE785E /* EZYGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA663221D439C8F00AE785E /* EZYGradientView.swift */; };
+		6CA663291D439CAE00AE785E /* EZYGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA663281D439CAE00AE785E /* EZYGradientView.m */; };
 		6CFA1AA61D40F2FF00AB04AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA1AA51D40F2FF00AB04AC /* AppDelegate.swift */; };
 		6CFA1AA81D40F2FF00AB04AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA1AA71D40F2FF00AB04AC /* ViewController.swift */; };
 		6CFA1AAB1D40F2FF00AB04AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFA1AA91D40F2FF00AB04AC /* Main.storyboard */; };
@@ -18,7 +25,19 @@
 
 /* Begin PBXFileReference section */
 		6BFF40631D42436E008EF94E /* Blogger_Sans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blogger_Sans.otf; sourceTree = "<group>"; };
-		6CBE806C1D422EFA00519B0D /* EZYGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZYGradientView.swift; sourceTree = "<group>"; };
+		6CA6630A1D439ACB00AE785E /* EzyGradientView->Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EzyGradientView->Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA6630D1D439ACB00AE785E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CA6630F1D439ACB00AE785E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6CA663101D439ACB00AE785E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CA663121D439ACB00AE785E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6CA663131D439ACB00AE785E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6CA663161D439ACB00AE785E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CA663181D439ACB00AE785E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CA6631B1D439ACB00AE785E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CA6631D1D439ACB00AE785E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA663221D439C8F00AE785E /* EZYGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZYGradientView.swift; sourceTree = "<group>"; };
+		6CA663271D439CAE00AE785E /* EZYGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZYGradientView.h; sourceTree = "<group>"; };
+		6CA663281D439CAE00AE785E /* EZYGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZYGradientView.m; sourceTree = "<group>"; };
 		6CFA1AA21D40F2FE00AB04AC /* EZYGradientView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZYGradientView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFA1AA51D40F2FF00AB04AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CFA1AA71D40F2FF00AB04AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6CA663071D439ACB00AE785E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CFA1A9F1D40F2FE00AB04AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,18 +65,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6CBE806B1D422EFA00519B0D /* EZYGradientView */ = {
+		6CA6630B1D439ACB00AE785E /* EzyGradientView->Objc */ = {
 			isa = PBXGroup;
 			children = (
-				6CBE806C1D422EFA00519B0D /* EZYGradientView.swift */,
+				6CA663241D439C9B00AE785E /* EZYGradientView */,
+				6CA6630F1D439ACB00AE785E /* AppDelegate.h */,
+				6CA663101D439ACB00AE785E /* AppDelegate.m */,
+				6CA663121D439ACB00AE785E /* ViewController.h */,
+				6CA663131D439ACB00AE785E /* ViewController.m */,
+				6CA663151D439ACB00AE785E /* Main.storyboard */,
+				6CA663181D439ACB00AE785E /* Assets.xcassets */,
+				6CA6631A1D439ACB00AE785E /* LaunchScreen.storyboard */,
+				6CA6631D1D439ACB00AE785E /* Info.plist */,
+				6CA6630C1D439ACB00AE785E /* Supporting Files */,
 			);
-			path = EZYGradientView;
+			path = "EzyGradientView->Objc";
+			sourceTree = "<group>";
+		};
+		6CA6630C1D439ACB00AE785E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CA6630D1D439ACB00AE785E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CA663211D439C8F00AE785E /* EZYGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				6CA663221D439C8F00AE785E /* EZYGradientView.swift */,
+			);
+			name = EZYGradientView;
+			path = ../../EZYGradientView;
+			sourceTree = "<group>";
+		};
+		6CA663241D439C9B00AE785E /* EZYGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				6CA663271D439CAE00AE785E /* EZYGradientView.h */,
+				6CA663281D439CAE00AE785E /* EZYGradientView.m */,
+			);
+			name = EZYGradientView;
+			path = ../../EZYGradientView;
 			sourceTree = "<group>";
 		};
 		6CFA1A991D40F2FE00AB04AC = {
 			isa = PBXGroup;
 			children = (
 				6CFA1AA41D40F2FF00AB04AC /* EZYGradientView */,
+				6CA6630B1D439ACB00AE785E /* EzyGradientView->Objc */,
 				6CFA1AA31D40F2FE00AB04AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				6CFA1AA21D40F2FE00AB04AC /* EZYGradientView.app */,
+				6CA6630A1D439ACB00AE785E /* EzyGradientView->Objc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,7 +130,7 @@
 		6CFA1AA41D40F2FF00AB04AC /* EZYGradientView */ = {
 			isa = PBXGroup;
 			children = (
-				6CBE806B1D422EFA00519B0D /* EZYGradientView */,
+				6CA663211D439C8F00AE785E /* EZYGradientView */,
 				6CFA1AA51D40F2FF00AB04AC /* AppDelegate.swift */,
 				6CFA1AA71D40F2FF00AB04AC /* ViewController.swift */,
 				6CFA1AA91D40F2FF00AB04AC /* Main.storyboard */,
@@ -81,6 +145,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6CA663091D439ACB00AE785E /* EzyGradientView->Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA663201D439ACB00AE785E /* Build configuration list for PBXNativeTarget "EzyGradientView->Objc" */;
+			buildPhases = (
+				6CA663061D439ACB00AE785E /* Sources */,
+				6CA663071D439ACB00AE785E /* Frameworks */,
+				6CA663081D439ACB00AE785E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EzyGradientView->Objc";
+			productName = "EzyGradientView->Objc";
+			productReference = 6CA6630A1D439ACB00AE785E /* EzyGradientView->Objc.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6CFA1AA11D40F2FE00AB04AC /* EZYGradientView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CFA1AB41D40F2FF00AB04AC /* Build configuration list for PBXNativeTarget "EZYGradientView" */;
@@ -108,6 +189,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Shashank;
 				TargetAttributes = {
+					6CA663091D439ACB00AE785E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					6CFA1AA11D40F2FE00AB04AC = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -127,11 +211,22 @@
 			projectRoot = "";
 			targets = (
 				6CFA1AA11D40F2FE00AB04AC /* EZYGradientView */,
+				6CA663091D439ACB00AE785E /* EzyGradientView->Objc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6CA663081D439ACB00AE785E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA6631C1D439ACB00AE785E /* LaunchScreen.storyboard in Resources */,
+				6CA663191D439ACB00AE785E /* Assets.xcassets in Resources */,
+				6CA663171D439ACB00AE785E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CFA1AA01D40F2FE00AB04AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,12 +241,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6CA663061D439ACB00AE785E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA663141D439ACB00AE785E /* ViewController.m in Sources */,
+				6CA663291D439CAE00AE785E /* EZYGradientView.m in Sources */,
+				6CA663111D439ACB00AE785E /* AppDelegate.m in Sources */,
+				6CA6630E1D439ACB00AE785E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CFA1A9E1D40F2FE00AB04AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6CFA1AA81D40F2FF00AB04AC /* ViewController.swift in Sources */,
-				6CBE806D1D422EFA00519B0D /* EZYGradientView.swift in Sources */,
+				6CA663231D439C8F00AE785E /* EZYGradientView.swift in Sources */,
 				6CFA1AA61D40F2FF00AB04AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +265,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6CA663151D439ACB00AE785E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA663161D439ACB00AE785E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CA6631A1D439ACB00AE785E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA6631B1D439ACB00AE785E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		6CFA1AA91D40F2FF00AB04AC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -178,6 +300,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6CA6631E1D439ACB00AE785E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "EzyGradientView->Objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shashank.EzyGradientView--Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CA6631F1D439ACB00AE785E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "EzyGradientView->Objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shashank.EzyGradientView--Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6CFA1AB21D40F2FF00AB04AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -286,6 +430,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6CA663201D439ACB00AE785E /* Build configuration list for PBXNativeTarget "EzyGradientView->Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA6631E1D439ACB00AE785E /* Debug */,
+				6CA6631F1D439ACB00AE785E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6CFA1A9D1D40F2FE00AB04AC /* Build configuration list for PBXProject "EZYGradientView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
