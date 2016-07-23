@@ -26,7 +26,7 @@ pod 'EZYGradientView'
 ```
 # Direct Installation
 
-Download .zip file and extract it. There you will find the `EZYGradientView` folder, copy all the files from the folder to your respective project.
+Download .zip file and extract it. There you will find the `EZYGradientView` folder, copy EZYGradientView.swift to your respective project.
 
 # Integration Methods
 
@@ -61,7 +61,7 @@ Just follow these simple steps and create a gradient inside your xib or storyboa
 
 |             Step              |                                        Description                                                                    |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| ![Step 4a](Assets/Step4a.png) | Set fade intensity. Default is 0, that's why there is a sharp boundary where the two colors meet. Valid range 0 to 1. |
+| ![Step 4a](Assets/Step4a.png) | Default is 0, that's why there is a sharp boundary where the two colors meet. Valid range 0 to 1. |
 | ![Step 4b](Assets/Step4b.png) | At 0.5, there is a much smoother transition between the two colors.                                                   |
 | ![Step 4c](Assets/Step4c.png) | At 1, the maximum transition smoothness is achieved.                                                                  |
 

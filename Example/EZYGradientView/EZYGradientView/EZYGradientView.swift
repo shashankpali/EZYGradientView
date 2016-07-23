@@ -31,7 +31,7 @@ public class EZYGradientView: UIView
   @IBInspectable public var secondColor: UIColor = UIColor.whiteColor()
   
   /// Angle will decide tilt of gradient line
-  @IBInspectable public var angleº: Float = 45
+  @IBInspectable public var angleº: Float = 45.0
     {
     didSet
     {
@@ -54,9 +54,9 @@ public class EZYGradientView: UIView
   /// Color ratio will decide the proportion of colors
   @IBInspectable public var colorRatio: Float = 0.5
     {
-      didSet
-      {
-        assert(colorRatio >= 0 || colorRatio <= 1, "Color Ratio: Valid range is from 0.0 to 1.0")
+    didSet
+    {
+      assert(colorRatio >= 0 || colorRatio <= 1, "Color Ratio: Valid range is from 0.0 to 1.0")
     }
   }
   
@@ -86,7 +86,7 @@ public class EZYGradientView: UIView
     layer.insertSublayer(gradientLayer, atIndex: 0)
   }
   
-//MARK: - Start and end point Calcuator
+  //MARK: - Start and end point calculator
   private func startEndPoints() -> (CGPoint, CGPoint)
   {
     var rotCalX: Float = 0.0
@@ -121,7 +121,7 @@ public class EZYGradientView: UIView
     return (start, end)
   }
   
-  //MARK: - Calcuate the colors location
+  //MARK: - Calculate the colors' location
   private func locations() -> (Float, Float)
   {
     let divider = fadeIntensity / self.divider()
