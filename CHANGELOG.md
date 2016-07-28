@@ -1,5 +1,18 @@
 # Change Log
 
+## [1.3](https://github.com/shashankpali/EZYGradientView/releases/tag/1.3)
+Released on Thusday, 28 Jul, 2016.
+
+#### Added
+* Blur property.
+* Objective C pod re-direct link.
+
+#### Removed
+* Objective C pod.
+
+#### Fixed
+* Storyboard/xib runtime error.
+
 ## [1.2](https://github.com/shashankpali/EZYGradientView/releases/tag/1.2)
 Released on Saturday, 23 Jul, 2016.
 

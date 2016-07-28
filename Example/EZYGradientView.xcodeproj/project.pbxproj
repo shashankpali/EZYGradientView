@@ -8,14 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6BFF40641D42436E008EF94E /* Blogger_Sans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6BFF40631D42436E008EF94E /* Blogger_Sans.otf */; };
-		6CA6630E1D439ACB00AE785E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA6630D1D439ACB00AE785E /* main.m */; };
-		6CA663111D439ACB00AE785E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA663101D439ACB00AE785E /* AppDelegate.m */; };
-		6CA663141D439ACB00AE785E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA663131D439ACB00AE785E /* ViewController.m */; };
-		6CA663171D439ACB00AE785E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA663151D439ACB00AE785E /* Main.storyboard */; };
-		6CA663191D439ACB00AE785E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA663181D439ACB00AE785E /* Assets.xcassets */; };
-		6CA6631C1D439ACB00AE785E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA6631A1D439ACB00AE785E /* LaunchScreen.storyboard */; };
 		6CA663231D439C8F00AE785E /* EZYGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA663221D439C8F00AE785E /* EZYGradientView.swift */; };
-		6CA663291D439CAE00AE785E /* EZYGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA663281D439CAE00AE785E /* EZYGradientView.m */; };
 		6CFA1AA61D40F2FF00AB04AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA1AA51D40F2FF00AB04AC /* AppDelegate.swift */; };
 		6CFA1AA81D40F2FF00AB04AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA1AA71D40F2FF00AB04AC /* ViewController.swift */; };
 		6CFA1AAB1D40F2FF00AB04AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFA1AA91D40F2FF00AB04AC /* Main.storyboard */; };
@@ -26,18 +19,7 @@
 /* Begin PBXFileReference section */
 		6BFF40631D42436E008EF94E /* Blogger_Sans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blogger_Sans.otf; sourceTree = "<group>"; };
 		6CA6630A1D439ACB00AE785E /* EzyGradientView->Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EzyGradientView->Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CA6630D1D439ACB00AE785E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6CA6630F1D439ACB00AE785E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6CA663101D439ACB00AE785E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6CA663121D439ACB00AE785E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6CA663131D439ACB00AE785E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6CA663161D439ACB00AE785E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6CA663181D439ACB00AE785E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6CA6631B1D439ACB00AE785E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6CA6631D1D439ACB00AE785E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CA663221D439C8F00AE785E /* EZYGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZYGradientView.swift; sourceTree = "<group>"; };
-		6CA663271D439CAE00AE785E /* EZYGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZYGradientView.h; sourceTree = "<group>"; };
-		6CA663281D439CAE00AE785E /* EZYGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZYGradientView.m; sourceTree = "<group>"; };
 		6CFA1AA21D40F2FE00AB04AC /* EZYGradientView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZYGradientView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFA1AA51D40F2FF00AB04AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CFA1AA71D40F2FF00AB04AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,31 +47,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6CA6630B1D439ACB00AE785E /* EzyGradientView->Objc */ = {
-			isa = PBXGroup;
-			children = (
-				6CA663241D439C9B00AE785E /* EZYGradientView */,
-				6CA6630F1D439ACB00AE785E /* AppDelegate.h */,
-				6CA663101D439ACB00AE785E /* AppDelegate.m */,
-				6CA663121D439ACB00AE785E /* ViewController.h */,
-				6CA663131D439ACB00AE785E /* ViewController.m */,
-				6CA663151D439ACB00AE785E /* Main.storyboard */,
-				6CA663181D439ACB00AE785E /* Assets.xcassets */,
-				6CA6631A1D439ACB00AE785E /* LaunchScreen.storyboard */,
-				6CA6631D1D439ACB00AE785E /* Info.plist */,
-				6CA6630C1D439ACB00AE785E /* Supporting Files */,
-			);
-			path = "EzyGradientView->Objc";
-			sourceTree = "<group>";
-		};
-		6CA6630C1D439ACB00AE785E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6CA6630D1D439ACB00AE785E /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		6CA663211D439C8F00AE785E /* EZYGradientView */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,21 +56,10 @@
 			path = ../../EZYGradientView;
 			sourceTree = "<group>";
 		};
-		6CA663241D439C9B00AE785E /* EZYGradientView */ = {
-			isa = PBXGroup;
-			children = (
-				6CA663271D439CAE00AE785E /* EZYGradientView.h */,
-				6CA663281D439CAE00AE785E /* EZYGradientView.m */,
-			);
-			name = EZYGradientView;
-			path = ../../EZYGradientView;
-			sourceTree = "<group>";
-		};
 		6CFA1A991D40F2FE00AB04AC = {
 			isa = PBXGroup;
 			children = (
 				6CFA1AA41D40F2FF00AB04AC /* EZYGradientView */,
-				6CA6630B1D439ACB00AE785E /* EzyGradientView->Objc */,
 				6CFA1AA31D40F2FE00AB04AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -221,9 +167,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CA6631C1D439ACB00AE785E /* LaunchScreen.storyboard in Resources */,
-				6CA663191D439ACB00AE785E /* Assets.xcassets in Resources */,
-				6CA663171D439ACB00AE785E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,10 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CA663141D439ACB00AE785E /* ViewController.m in Sources */,
-				6CA663291D439CAE00AE785E /* EZYGradientView.m in Sources */,
-				6CA663111D439ACB00AE785E /* AppDelegate.m in Sources */,
-				6CA6630E1D439ACB00AE785E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,22 +204,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6CA663151D439ACB00AE785E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6CA663161D439ACB00AE785E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6CA6631A1D439ACB00AE785E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6CA6631B1D439ACB00AE785E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		6CFA1AA91D40F2FF00AB04AC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,6 +360,7 @@
 				6CA6631F1D439ACB00AE785E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CFA1A9D1D40F2FE00AB04AC /* Build configuration list for PBXProject "EZYGradientView" */ = {
 			isa = XCConfigurationList;

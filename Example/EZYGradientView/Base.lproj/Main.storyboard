@@ -19,6 +19,7 @@
             <string>BloggerSans</string>
             <string>BloggerSans</string>
             <string>BloggerSans</string>
+            <string>BloggerSans</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -34,6 +35,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shashank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3L-7H-27o">
+                                <rect key="frame" x="243" y="50" width="114" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAn-Ln-fH6" customClass="EZYGradientView" customModule="EZYGradientView" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                 <subviews>
@@ -95,14 +103,14 @@
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboard Gradient View " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-5g-rnQ">
-                                        <rect key="frame" x="212" y="259" width="177" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboard Gradient View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-5g-rnQ">
+                                        <rect key="frame" x="214" y="259" width="172" height="17"/>
                                         <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="0Kj-ow-1S7"/>
                                     <constraint firstItem="7mq-7T-aHh" firstAttribute="centerX" secondItem="zAn-Ln-fH6" secondAttribute="centerX" id="24I-pL-M3O"/>
@@ -131,20 +139,21 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                        <color key="value" red="0.58451926099999996" green="0.80785915180000001" blue="0.0030676620990000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.97796610039999998" green="1" blue="0.53913099730000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                        <color key="value" red="1" green="0.92293074870000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.66205343660000004" green="1" blue="0.73143274700000005" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="angleº">
-                                        <real key="value" value="45"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="colorRatio">
-                                        <real key="value" value="0.5"/>
+                                        <real key="value" value="-45"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="fadeIntensity">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="blurOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBlur" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -179,12 +188,14 @@
                             <constraint firstItem="zAn-Ln-fH6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R4B-jp-yoa"/>
                             <constraint firstItem="zAn-Ln-fH6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="ROC-e7-bqZ"/>
                             <constraint firstItem="zAn-Ln-fH6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="TXl-TI-DSC"/>
+                            <constraint firstItem="q3L-7H-27o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="XL9-H9-kTe"/>
                             <constraint firstItem="Rj3-67-jyH" firstAttribute="top" secondItem="zAn-Ln-fH6" secondAttribute="bottom" id="YaI-Gx-Q4R"/>
                             <constraint firstItem="Rj3-67-jyH" firstAttribute="top" secondItem="zAn-Ln-fH6" secondAttribute="bottom" constant="5" id="Yax-38-Wed"/>
                             <constraint firstItem="zAn-Ln-fH6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="djh-EP-sam"/>
                             <constraint firstAttribute="trailing" secondItem="Rj3-67-jyH" secondAttribute="trailing" id="k9R-mA-N8n"/>
                             <constraint firstItem="Rj3-67-jyH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mXu-NI-oxg"/>
                             <constraint firstItem="zAn-Ln-fH6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oXx-2V-CVL"/>
+                            <constraint firstItem="q3L-7H-27o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ydw-SR-vDQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

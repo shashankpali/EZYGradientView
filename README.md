@@ -1,6 +1,6 @@
-![EZYGradientView](Assets/Banner.png)
+![EZYGradientView](Assets/GitBanner.png)
 
-`EZYGradientView` is a different and unique take on creating gradients on the iOS platform. The default `CAGradientLayer` implementation works just fine, but is confusing and gives different results than expected. From the documentation:
+`EZYGradientView` is a different and unique take on creating gradients and gradients with blur on the iOS platform. The default `CAGradientLayer` implementation works just fine, but is confusing and gives different results than expected. From the documentation:
 
 > The start point corresponds to the first stop of the gradient. The point is defined in the unit coordinate space and is then mapped to the layer’s bounds rectangle when drawn. 
 
@@ -23,11 +23,11 @@ CocoaPods is the preferred way to install this library. Add this command to your
 pod 'EZYGradientView'
 ```
 
-If you want the Objective C version, add:
 
-```
-pod 'EZYGradientView/ObjC'
-```
+
+
+###For [Objective C](https://github.com/shashankpali/EZYGradientView-ObjC)
+
 
 # Direct Installation
 
@@ -64,28 +64,43 @@ Just follow these simple steps and create a gradient inside your xib or storyboa
 
 ### Step 4 - Set fade intensity
 
-|             Step              |                                        Description                                                                    |
-|-------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+|             Step              |                                        Description                                                |
+|-------------------------------|---------------------------------------------------------------------------------------------------|
 | ![Step 4a](Assets/Step4a.png) | Default is 0, that's why there is a sharp boundary where the two colors meet. Valid range 0 to 1. |
-| ![Step 4b](Assets/Step4b.png) | At 0.5, there is a much smoother transition between the two colors.                                                   |
-| ![Step 4c](Assets/Step4c.png) | At 1, the maximum transition smoothness is achieved.                                                                  |
+| ![Step 4b](Assets/Step4b.png) | At 0.5, there is a much smoother transition between the two colors.                               |
+| ![Step 4c](Assets/Step4c.png) | At 1, the maximum transition smoothness is achieved.                                              |
+
+### Step 5 - Set isBlur and blur opacity 
+######(This feature is available for ios 8 and above)
+ 
+
+|             Step              |                                        Description                                                |
+|-------------------------------|---------------------------------------------------------------------------------------------------|
+| ![Step 5a](Assets/Step5a.png) | Default is 0, where the blur transparency is minimmum. Valid range 0 to 1.                        |
+| ![Step 5b](Assets/Step5b.png) | At 1.0, where the blur transparency is maximum.(The black spot is a label behind gradient view)   |                                       
+|          Suggestion           | Use this properties to design `navigationBar`, `tabBar`, `tableHeaderView` etc.                   |
 
 ## Programmatic way
 
 ```swift
 let gradientView = EZYGradientView()
     gradientView.frame = view.bounds
-    gradientView.firstColor = UIColor.blueColor()
-    gradientView.secondColor = UIColor.greenColor()
+    gradientView.firstColor = UIColor(red: 0.5, green: 0.0, blue: 1.0, alpha: 1.0)
+    gradientView.secondColor = UIColor(red: 0.4, green: 1.0, blue: 0.8, alpha: 1.0)
     gradientView.angleº = 185.0
     gradientView.colorRatio = 0.5
     gradientView.fadeIntensity = 1
-    view.addSubview(gradientView)
+    gradientView.isBlur = true
+    gradientView.blurOpacity = 0.5
+    
+    view.insertSubview(gradientView, atIndex: 0)
 ```
 
 # To-do
 
 * Allow more than two colors to create gradients.
+* It may crash if blur properties used in lower version than ios 8.
+* Use CoreGraphics blur to replace `UIVisualEffectView`.
 
 # Thanks
 

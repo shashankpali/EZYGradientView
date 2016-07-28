@@ -56,6 +56,8 @@ class ViewController: UIViewController
     secondGradientView.angleº = 185.0
     secondGradientView.colorRatio = 0.5
     secondGradientView.fadeIntensity = 1
+    secondGradientView.isBlur = true
+    secondGradientView.blurOpacity = 0.5
     
     refView.insertSubview(secondGradientView, atIndex: 0)
   }
