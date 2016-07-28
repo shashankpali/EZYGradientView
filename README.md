@@ -39,6 +39,16 @@ Download .zip file and extract it. There you will find the `EZYGradientView` fol
 
 Just follow these simple steps and create a gradient inside your xib or storyboard!
 
+
+### Initial Step (Use this step if downloaded by pod)
+
+###### while assigning EZYGradientView to UIView on StoryBoard/Xib don't forget to select module 
+
+|             Step              |                   Description                     |
+|-------------------------------|---------------------------------------------------|
+| ![Step 0a](Assets/Step0a.png) |                                                   |
+| ![Step 0b](Assets/Step0b.png) | It will reflect warning if module is not selected.|
+
 ### Step 1 - Select colors
 
 |             Step              |  Description  |

@@ -1,7 +1,13 @@
 # Change Log
 
+## [1.3.1](https://github.com/shashankpali/EZYGradientView/releases/tag/1.3.1)
+Released on Thursday, 28 Jul, 2016.
+
+#### Update
+* Documentation.
+
 ## [1.3](https://github.com/shashankpali/EZYGradientView/releases/tag/1.3)
-Released on Thusday, 28 Jul, 2016.
+Released on Thursday, 28 Jul, 2016.
 
 #### Added
 * Blur property.
