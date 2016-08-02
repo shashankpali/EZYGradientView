@@ -28,11 +28,29 @@ public class EZYGradientView: UIView
 {
   
   //MARK:- Properties
-  /// First color of gradient i.e. it appear on top when angleº set to 0.0.
+  /// First color of gradient i.e. it appears on top when angleº set to 0.0.
   @IBInspectable public var firstColor: UIColor = UIColor.whiteColor()
+    {
+    didSet
+    {
+      if gradientLayer != nil
+      {
+        self.updateColors()
+      }
+    }
+  }
   
-  /// Second color of gradient i.e. it appear in bottom when angleº set to 0.0.
+  /// Second color of gradient i.e. it appears in bottom when angleº set to 0.0.
   @IBInspectable public var secondColor: UIColor = UIColor.whiteColor()
+    {
+    didSet
+    {
+      if gradientLayer != nil
+      {
+        self.updateColors()
+      }
+    }
+  }
   
   /// Angleº will describe the tilt of gradient.
   @IBInspectable public var angleº: Float = 45.0
@@ -52,6 +70,11 @@ public class EZYGradientView: UIView
       {
         angleº = angleº - Float(360 * multiplier)
       }
+      
+      if gradientLayer != nil
+      {
+        self.updatePoints()
+      }
     }
   }
   
@@ -61,6 +84,10 @@ public class EZYGradientView: UIView
     didSet
     {
       assert(colorRatio >= 0 || colorRatio <= 1, "Color Ratio: Valid range is from 0.0 to 1.0")
+      if gradientLayer != nil
+      {
+        self.updateLocation()
+      }
     }
   }
   
@@ -70,14 +97,28 @@ public class EZYGradientView: UIView
     didSet
     {
       assert(colorRatio >= 0 || colorRatio <= 1, "Fade Intensity: Valid range is from 0.0 to 1.0")
+      if gradientLayer != nil
+      {
+        self.updateLocation()
+      }
     }
   }
   
-  /// Is blur allow to add visual effect on gradient view.
+  /// Is blur allow to add visual effect on gradient view. Can't be change during run-time.
   @IBInspectable public var isBlur: Bool = false
   
   /// Blur opacity will describe the transparency of blur. It's value ranges from 0.0 to 1.0 default is 0.0. It is suggested to set EZYGradientView background color as clear color for better results.
   @IBInspectable public var blurOpacity: Float = 0.0
+    {
+    didSet
+    {
+      assert(blurOpacity >= 0 || blurOpacity <= 1, "Blur Opacity: Valid range is from 0.0 to 1.0")
+      if gradientLayer != nil
+      {
+        self.checkBlurStatusAndUpdateOpacity()
+      }
+    }
+  }
   
   private var blurView = UIVisualEffectView?()
   private var gradientLayer: CAGradientLayer?
@@ -96,7 +137,8 @@ public class EZYGradientView: UIView
     self.backgroundColor = UIColor .clearColor()
   }
   
-  //MARK:- Draw Rect
+  //MARK:- Draw Rect with steps
+  
   override public func drawRect(rect: CGRect)
   {
     if gradientLayer == nil
@@ -105,15 +147,40 @@ public class EZYGradientView: UIView
       gradientLayer!.frame = self.bounds
       layer.insertSublayer(gradientLayer!, atIndex: 0)
     }
+    self.updateColors()
+    self.updatePoints()
+    self.updateLocation()
+    self.checkBlurStatusAndUpdateOpacity()
+  }
+  /**
+   Step 1
+   */
+  private func updateColors()
+  {
     gradientLayer!.colors = [firstColor.CGColor, secondColor.CGColor]
-    
+  }
+  /**
+   Step 2
+   */
+  private func updatePoints()
+  {
     let points = startEndPoints()
     gradientLayer!.startPoint = points.0
     gradientLayer!.endPoint = points.1
-    
+  }
+  /**
+   Step 3
+   */
+  private func updateLocation()
+  {
     let colorLoc = locations()
     gradientLayer!.locations = [colorLoc.0, colorLoc.1]
-    blurView = nil
+  }
+  /**
+   Step 4
+   */
+  private func checkBlurStatusAndUpdateOpacity()
+  {
     if isBlur
     {
       if blurView == nil
@@ -124,6 +191,11 @@ public class EZYGradientView: UIView
       }
       gradientLayer!.colors = [self.blurColor(firstColor), self.blurColor(secondColor)]
       self.insertSubview(blurView!, atIndex: 0)
+    }
+    else
+    {
+      blurView?.removeFromSuperview()
+      blurView = nil
     }
   }
   
