@@ -106,7 +106,15 @@ public class EZYGradientView: UIView
   
   /// Is blur allow to add visual effect on gradient view. Can't be change during run-time.
   @IBInspectable public var isBlur: Bool = false
-  
+    {
+    didSet
+    {
+      if gradientLayer != nil
+      {
+        self.checkBlurStatusAndUpdateOpacity()
+      }
+    }
+  }
   /// Blur opacity will describe the transparency of blur. It's value ranges from 0.0 to 1.0 default is 0.0. It is suggested to set EZYGradientView background color as clear color for better results.
   @IBInspectable public var blurOpacity: Float = 0.0
     {
@@ -121,20 +129,21 @@ public class EZYGradientView: UIView
   }
   
   private var blurView = UIVisualEffectView?()
-  private var gradientLayer: CAGradientLayer?
+  public var blurLayer: CALayer?
+  public var gradientLayer: CAGradientLayer?
   
   //MARK:- Designated Initializer
   
   override init(frame: CGRect)
   {
     super.init(frame: frame)
-    self.backgroundColor = UIColor .clearColor()
+    self.backgroundColor = UIColor.clearColor()
   }
   
   public required init?(coder aDecoder: NSCoder)
   {
     super.init(coder: aDecoder)
-    self.backgroundColor = UIColor .clearColor()
+    self.backgroundColor = UIColor.clearColor()
   }
   
   //MARK:- Draw Rect with steps
@@ -181,6 +190,7 @@ public class EZYGradientView: UIView
    */
   private func checkBlurStatusAndUpdateOpacity()
   {
+    print(self.layer.sublayers?.count)
     if isBlur
     {
       if blurView == nil
@@ -188,13 +198,15 @@ public class EZYGradientView: UIView
         let blurEffect = UIBlurEffect(style: .Light)
         blurView = UIVisualEffectView(effect: blurEffect)
         blurView?.frame = self.bounds
+        blurLayer = blurView?.layer
       }
-      gradientLayer!.colors = [self.blurColor(firstColor), self.blurColor(secondColor)]
-      self.insertSubview(blurView!, atIndex: 0)
+      gradientLayer!.colors = [blurColor(firstColor), blurColor(secondColor)]
+      self.layer.insertSublayer(blurLayer!, above: gradientLayer)
     }
     else
     {
-      blurView?.removeFromSuperview()
+      blurLayer?.removeFromSuperlayer()
+      blurLayer = nil
       blurView = nil
     }
   }

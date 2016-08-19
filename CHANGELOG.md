@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.5](https://github.com/shashankpali/EZYGradientView/releases/tag/1.5)
+Released on Friday, 19 Aug, 2016.
+
+#### Update
+*Set "gradientLayer" and "blurLayer" properties to public properties.
+
 ## [1.4](https://github.com/shashankpali/EZYGradientView/releases/tag/1.4)
 Released on Tuesday, 2 Aug, 2016.
 
