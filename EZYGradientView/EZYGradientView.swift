@@ -190,7 +190,6 @@ public class EZYGradientView: UIView
    */
   private func checkBlurStatusAndUpdateOpacity()
   {
-    print(self.layer.sublayers?.count)
     if isBlur
     {
       if blurView == nil
@@ -201,7 +200,7 @@ public class EZYGradientView: UIView
         blurLayer = blurView?.layer
       }
       gradientLayer!.colors = [blurColor(firstColor), blurColor(secondColor)]
-      self.layer.insertSublayer(blurLayer!, above: gradientLayer)
+      self.layer.insertSublayer(blurLayer!, below: gradientLayer)
     }
     else
     {

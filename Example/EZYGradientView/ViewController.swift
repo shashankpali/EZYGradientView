@@ -34,7 +34,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
       navGradientView.fadeIntensity = fadeIntesity
       tabGradientView.fadeIntensity = fadeIntesity
-      print(fadeIntesity)
     }
   }
   
@@ -62,6 +61,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     super.viewDidLoad()
     myTableView.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 118, right: 0)
     myTableView.scrollIndicatorInsets = myTableView.contentInset
+  }
+  
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+    tabGradientView.blurLayer?.cornerRadius = tabGradientView.frame.size.height/2
+    tabGradientView.blurLayer?.masksToBounds = true
   }
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

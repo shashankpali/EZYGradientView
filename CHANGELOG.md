@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.5.1](https://github.com/shashankpali/EZYGradientView/releases/tag/1.5.1)
+Released on Friday, 19 Aug, 2016.
+
+#### Fixed
+*"blurLayer" property now shows color separation. 
+
 ## [1.5](https://github.com/shashankpali/EZYGradientView/releases/tag/1.5)
 Released on Friday, 19 Aug, 2016.
 
