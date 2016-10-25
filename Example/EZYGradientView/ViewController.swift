@@ -63,24 +63,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     myTableView.scrollIndicatorInsets = myTableView.contentInset
   }
   
-  override func viewDidAppear(animated: Bool) {
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     tabGradientView.blurLayer?.cornerRadius = tabGradientView.frame.size.height/2
     tabGradientView.blurLayer?.masksToBounds = true
   }
   
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return 10;
   }
   
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
     return cell;
   }
   
   
-  @IBAction func sliderChangedValue(sender: AnyObject)
+  @IBAction func sliderChangedValue(_ sender: AnyObject)
   {
     let slider = sender as! UISlider
     
