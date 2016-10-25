@@ -20,7 +20,7 @@ This library attempts to create gradients intuitively. When you use `EZYGradient
 CocoaPods is the preferred way to install this library. Add this command to your `Podfile`:
 
 ```
-pod 'EZYGradientView'
+pod 'EZYGradientView', :git => 'https://github.com/Niphery/EZYGradientView'
 ```
 
 
@@ -103,7 +103,7 @@ let gradientView = EZYGradientView()
     gradientView.isBlur = true
     gradientView.blurOpacity = 0.5
     
-    view.insertSubview(gradientView, atIndex: 0)
+    view.insertSubview(gradientView, at: 0)
 ```
 
 # To-do
