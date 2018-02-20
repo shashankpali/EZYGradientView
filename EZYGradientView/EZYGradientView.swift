@@ -130,7 +130,14 @@ open class EZYGradientView: UIView
   
 	fileprivate var blurView: UIVisualEffectView?
   open var blurLayer: CALayer?
-  open var gradientLayer: CAGradientLayer?
+  open var gradientLayer: CAGradientLayer? 
+  {
+     return (layer as? CAGradientLayer)
+  }
+  override class var layerClass: AnyClass 
+  {
+     return CAGradientLayer.self
+  }
   
   //MARK:- Designated Initializer
   
@@ -150,12 +157,6 @@ open class EZYGradientView: UIView
   
   override open func draw(_ rect: CGRect)
   {
-    if gradientLayer == nil
-    {
-      gradientLayer = CAGradientLayer()
-      gradientLayer!.frame = self.bounds
-      layer.insertSublayer(gradientLayer!, at: 0)
-    }
     self.updateColors()
     self.updatePoints()
     self.updateLocation()
