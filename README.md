@@ -115,6 +115,7 @@ let gradientView = EZYGradientView()
 # Thanks
 
 * To [Sudeep Jaiswal](https://github.com/sudeepjaiswal) for motivating and special thanks for the documentation and ideas.
+* To [Angela Yu](https://www.udemy.com/course/ios-13-app-development-bootcamp/) for the updated courses on iOS 13 & Swift 5.
 
 # License
 
