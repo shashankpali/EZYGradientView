@@ -117,6 +117,12 @@ let gradientView = EZYGradientView()
 * To [Sudeep Jaiswal](https://github.com/sudeepjaiswal) for motivating and special thanks for the documentation and ideas.
 * To [Angela Yu](https://www.udemy.com/course/ios-13-app-development-bootcamp/) for the updated courses on iOS 13 & Swift 5.
 
+## Third Party Bindings
+
+### React Native
+You may now use this library with [React Native](https://github.com/facebook/react-native) via the module [here](https://github.com/prscX/react-native-gradient-blur-view)
+
+
 # License
 
 `EZYGradientView` is available under the MIT license. See the LICENSE file for more info.
